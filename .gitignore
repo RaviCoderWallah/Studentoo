@@ -1,0 +1,26 @@
+# Dependencies (Heavy node modules jo direct install ho jate hain)
+node_modules/
+jspm_packages/
+web_modules/
+
+# Eleventy Local Build Output (Is folder ko upload nahi karte, hosting platforms ise khud build karte hain)
+_site/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Operating System Files (Faltu ki system files)
+.DS_Store
+Thumbs.db
+
+# IDEs and Editors (Agar aap VS Code use kar rahe hain)
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

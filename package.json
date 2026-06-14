@@ -1,0 +1,22 @@
+{
+  "name": "studentoo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:eleventy": "eleventy",
+    "build:tailwind": "npx @tailwindcss/cli -i ./src/assets/css/source.css -o ./_site/src/assets/css/style.css --minify",
+    "watch:eleventy": "eleventy --serve",
+    "watch:tailwind": "npx @tailwindcss/cli -i ./src/assets/css/source.css -o ./_site/src/assets/css/style.css --watch",
+    "start": "npm-run-all --parallel watch:eleventy watch:tailwind",
+    "build": "npm-run-all build:eleventy build:tailwind"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@tailwindcss/cli": "^4.3.1",
+    "tailwindcss": "^4.3.1"
+  }
+}
